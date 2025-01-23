@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Aybek Zhenisov">
-    <meta name="description" content="The project website for fictional Bauyrsak Shop">
+    <meta name="description" content="The project website for fictional Baursak Shop">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aybek's Bauyrsak Shop</title>
+    <title>Baursak Shop</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-    <h1>Welcome to Bauyrsak Shop!</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about">About Bauyrsak Shop</a>
-            </li>
+    <header class="header">
+    <h1 class="header__h1">Baursak Shop</h1>
+    <nav class="header__nav">
+        <ul class="header__ul">
             <li>
                 <a href="#menu">Menu</a>
             </li>
@@ -28,88 +25,81 @@
             <li>
                 <a href="contact.html">Contact Us</a>
             </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
         </ul>
     </nav>
-
-    <figure>
-        <img src="img/1.jpg" alt="Bayursak pic" title="Bayursak" height="300" width="400"> 
-    </figure>
-    <figcaption>
-        Bauyrsak and Kumis!
-    </figcaption>
     </header>
-    <hr>
-    <main>
-        <article id="about">
-            <p>
-            This is fictional website about shop that sells bauyrsak and kumis. I did it to practice my <strong> html and css </strong> skills.
-            </p>
-        
-            <aside>
-                <details>
-                    <summary>What do you know about Bauyrsak?</summary>
-                <p>
-                Baursak is a national Kazakh dish. Baursak is made from fermented wheat flour, made into various shapes, and cooked in oil.
-                </p>
-                </details>
-            </aside>
-        </article>
 
-        <article id="menu">
-            <h2>Our Menu</h2>
-            <table>
-                <caption>Menu</caption>
+    <section class="hero">
+        <h2 class="hero__h2">Armysyn!</h2>
+        <figure>
+            <img src="img/1.jpg" alt="Bayursak pic" title="Bayursak" height="1000" width="1000"> 
+        </figure>
+        <figcaption class="offscreen">
+            Baursak and Kumiss
+        </figcaption>
+    </section>
+    
+    <main class="main">
+
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Menu</caption>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Price</th>
+                        <th class="menu__header" scope="col">Name</th>
+                        <th class="menu__header" scope="col">Amount</th>
+                        <th class="menu__header" scope="col">Price</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <th scope="row" rowspan="3">
-                            Bauyrsak
+                        <th class="menu__item menu__ba" scope="row" rowspan="3">
+                            Baursak
                         </th>
-                        <td>1kg</td>
-                        <td>2500&#8376;</td>
+                        <td class="menu__item">1kg</td>
+                        <td class="menu__item">2500&#8376;</td>
                     </tr>
                     <tr>
-                        <td>2kg</td>
-                        <td>4000&#8376;</td>
+                        <td class="menu__item">2kg</td>
+                        <td class="menu__item">4000&#8376;</td>
                     </tr>
                     <tr>
-                        <td>5kg</td>
-                        <td>8000&#8376;</td>
+                        <td class="menu__item">5kg</td>
+                        <td class="menu__item">8000&#8376;</td>
                     </tr>
 
                     <tr>
-                        <th scope="row" rowspan="3">
-                            Shi Bauyrsak
+                        <th class="menu__item menu__sh" scope="row" rowspan="3">
+                            Shi Baursak
                         </th>
-                        <td>1kg</td>
-                        <td>1500&#8376;</td>
+                        <td class="menu__item">1kg</td>
+                        <td class="menu__item">1500&#8376;</td>
                     </tr>
                     <tr>
-                        <td>2kg</td>
-                        <td>2500&#8376;</td>
+                        <td class="menu__item">2kg</td>
+                        <td class="menu__item">2500&#8376;</td>
                     </tr>
                     <tr>
-                        <td>3kg</td>
-                        <td>4000&#8376;</td>
+                        <td class="menu__item">3kg</td>
+                        <td class="menu__item">4000&#8376;</td>
                     </tr>
                 </tbody>
 
                 <tfoot>
-                    <td colspan="3"> <strong> Kumis</strong> 1 liter 1700&#8376;</td>
+                    <td class="menu__item menu__ku" colspan="3"> Kumiss 1 liter 1700&#8376;</td>
                 </tfoot>
             </table>
         </article>
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy;Aybek's Bauyrsak Shop</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Baursak Shop</span></p>
     </footer>
 </body>
 

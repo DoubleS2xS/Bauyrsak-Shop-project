@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Aybek Zhenisov">
-    <meta name="description" content="Hours page for fictional Bauyrsak shop">
+    <meta name="description" content="Hours page for fictional Baursak shop">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hours of work</title>
@@ -12,44 +12,52 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Bauyrsak Shop!</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <h1 class="header__h1">Hours of Work</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li>
-                    <a href="/#about">About Bauyrsak Shop</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
                     <a href="/#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="hours.html">Hours</a>
+                    <a href="contact.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
         </nav>
-        <figure>
-            <img src="img/2.jpeg" alt="Shi bayursak pic" title="Shi bayursak" height="270" width="400"> 
-        </figure>
-        <figcaption>
-            Shi Baursak (eat me)!
-        </figcaption>
     </header>
-    <hr>
-    <main>
-    <p>We are open 7 days a week!</p>
-    <dl>
-        <dt>Monday-Saturday</dt>
-        <dd>8:00-21:00</dd>
-        <dt>Sunday</dt>
-        <dd>8:00-20:00</dd>
-    </dl>
+
+    <section>
+        <figure>
+            <img src="img/2.jpeg" alt="Shi bayursak pic" title="Shi bayursak" height="1000" width="1000"> 
+        </figure>
+        <figcaption class="offscreen">
+            Shi Baursak
+        </figcaption>
+    </section>
+    
+    <main class="main">
+        <article class="main__article">
+            <h2>Hours</h2>
+            <p>We are open 7 days a week!</p>
+            <dl>
+                <dt>Monday-Saturday</dt>
+                <dd>8:00-21:00</dd>
+                <dt>Sunday</dt>
+                <dd>8:00-20:00</dd>
+            </dl>
+        </article>
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy;Aybek's Bauyrsak Shop</p>
+    
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Baursak Shop</span></p>
     </footer>
 </body>
 
